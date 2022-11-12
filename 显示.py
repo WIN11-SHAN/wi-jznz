@@ -1,0 +1,15 @@
+from tkinter import*
+def cal():
+    a=ent.get()
+    text.set(a)
+root = Tk()
+root.title('机')
+root.geometry('500x200+500+200')
+bt = Button(root, text='123',command=cal)
+bt.grid(row=0, column=1)
+ent=Entry(root)
+ent.grid(row=0,column=0)
+text = StringVar()
+label = Label(root, textvariable=text)
+label.grid(row=1, column=0, columnspan=2)
+root.mainloop()
